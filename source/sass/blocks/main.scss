@@ -1,0 +1,30 @@
+.main__bg {
+  background: $main-screen-gradient;
+  width: 100%;
+  position: absolute;
+  min-height: 658px;
+  z-index: -1;
+  top: 0;
+
+  @media (max-width: $tablet) {
+    min-height: 554px;
+    background: $main-screen-gradient-tablet;
+  }
+
+  @media (max-width: $mobile) {
+    min-height: 491px;
+    background: $main-screen-gradient-mobile;
+  }
+}
+
+.main__intro {
+  margin-bottom: 120px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 99px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 70px;
+  }
+}
