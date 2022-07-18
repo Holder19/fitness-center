@@ -246,6 +246,10 @@ button,
   margin: 0 7.54%;
 }
 
+.page__gym {
+  padding-bottom: 7px;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,7 +270,7 @@ button,
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "Bebas Neue", "Ubuntu Mono", monospace;
   letter-spacing: 0.03em;
 }
 
@@ -309,7 +313,7 @@ button,
   font-size: 49px;
   line-height: 59px;
   letter-spacing: 0.03em;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "Bebas Neue", "Ubuntu Mono", monospace;
   color: #ffffff;
   text-align: right;
   font-weight: normal;
@@ -323,7 +327,7 @@ button,
   font-size: 109px;
   line-height: 109px;
   letter-spacing: 0.03em;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "Bebas Neue", "Ubuntu Mono", monospace;
   color: #ffffff;
   max-width: 298px;
   text-align: right;
@@ -419,6 +423,17 @@ button,
   border-color: #030a1a;
 }
 
+.button--tabs {
+  color: #102654;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  width: auto;
+  padding: 23px 43px;
+}
+
 .gym__inner-wrapper {
   display: -ms-grid;
   display: grid;
@@ -436,7 +451,7 @@ button,
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
-  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-family: "Bebas Neue", "Ubuntu Mono", monospace;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -548,6 +563,180 @@ button,
   cursor: pointer;
 }
 
+.tickets {
+  background-color: #f8f9fc;
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.tickets::before {
+  content: "";
+  background-image: url("../img/content/disk-bg-desktop@1x.png");
+  background-size: cover;
+  width: 287px;
+  height: 488px;
+  position: absolute;
+  z-index: -1;
+  bottom: -143px;
+  right: 0;
+}
+
+.tickets h2 {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  font-family: "Bebas Neue", "Ubuntu Mono", monospace;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tickets__tabs-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ticktets__tabs-button {
+  border: none;
+  background-color: transparent;
+  color: rgba(16, 38, 84, 0.5);
+  font-size: 20px;
+  line-height: 150%;
+  cursor: pointer;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  padding: 0;
+  padding-bottom: 11px;
+}
+
+.ticktets__tabs-button--active {
+  color: #102654;
+  border-bottom: 2px solid #ed0233;
+  margin-bottom: -2px;
+}
+
+.ticktets__tabs-button:hover {
+  color: #102654;
+  border-bottom: 2px solid #ed0233;
+  margin-bottom: -2px;
+}
+
+.ticktets__tabs-button:not(:last-child) {
+  margin-right: 46px;
+}
+
+.tickets__tabs-items {
+  display: none;
+}
+
+.tickets__tabs-items--active {
+  display: block;
+}
+
+.tickets__tabs-items ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.tickets__tabs-items li {
+  margin: 0;
+  padding: 55px 0 62px;
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  border: 7px solid;
+  border-color: transparent;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.tickets__tabs-items li:hover {
+  -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
+  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-slice: 1;
+}
+
+.tickets__tabs-items li:focus {
+  -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
+  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-slice: 1;
+}
+
+.tickets__tabs-items li:focus .button--tabs,
+.tickets__tabs-items li:hover .button--tabs {
+  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  color: #ffffff;
+}
+
+.tickets__tabs-items h3 {
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+.tickets__tabs-about {
+  margin: 0;
+  padding: 0;
+  color: #495a7d;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 64px;
+}
+
+.tickets__tabs-items span {
+  font-family: "Rouble", "Arial", sans-serif;
+  color: #102654;
+  display: inline-block;
+}
+
+.tickets__tabs-items .tickets__tabs-price-bg {
+  position: absolute;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+  color: #e8e8e8;
+  opacity: 0.48;
+  -webkit-transform: translate(-2px, 60px);
+  -ms-transform: translate(-2px, 60px);
+  transform: translate(-2px, 60px);
+}
+
+.tickets__tabs-price {
+  color: #103aae;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 36px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -558,6 +747,10 @@ button,
 @media (max-width: 1199px) {
   .page__leveler {
     margin: 0 5.86%;
+  }
+
+  .page__gym {
+    padding-bottom: 15px;
   }
 
   .header__wrapper {
@@ -703,6 +896,50 @@ button,
     width: 73px;
     height: 73px;
   }
+
+  .tickets {
+    padding: 100px 0;
+  }
+
+  .tickets::before {
+    background-image: url("../img/content/disk-bg-tablet@1x.png");
+    width: 347px;
+    height: 373px;
+    bottom: -52px;
+  }
+
+  .tickets h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+
+  .tickets__tabs-nav {
+    margin-bottom: 46px;
+  }
+
+  .ticktets__tabs-button {
+    font-size: 18px;
+  }
+
+  .ticktets__tabs-button:not(:last-child) {
+    margin-right: 54px;
+  }
+
+  .tickets__tabs-items ul {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    padding: 0 120px;
+  }
+
+  .tickets__tabs-items li {
+    padding: 54px 54px 61px;
+    min-width: 442px;
+  }
+
+  .tickets__tabs-items h3 {
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -712,6 +949,10 @@ button,
 
   .page__leveler--mobile-off {
     display: contents;
+  }
+
+  .page__gym {
+    padding-bottom: 70px;
   }
 
   .header__wrapper {
@@ -778,6 +1019,10 @@ button,
     width: 100%;
   }
 
+  .button--tabs {
+    padding: 25px 43px;
+  }
+
   .gym__description {
     padding: 0 15px;
     justify-items: start;
@@ -805,6 +1050,10 @@ button,
     display: block;
   }
 
+  .gym__content {
+    width: 100%;
+  }
+
   .gym__content img {
     width: 100%;
     height: 313px;
@@ -815,6 +1064,14 @@ button,
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .gym__video-link {
+    width: 100%;
   }
 
   .gym__video-media {
@@ -824,6 +1081,70 @@ button,
   .gym__video-button svg {
     width: 12px;
     height: 12px;
+  }
+
+  .tickets {
+    padding: 70px 0;
+  }
+
+  .tickets::before {
+    display: none;
+  }
+
+  .tickets h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 22px;
+  }
+
+  .tickets__tabs-nav {
+    margin-bottom: 34px;
+  }
+
+  .ticktets__tabs-button {
+    font-size: 16px;
+  }
+
+  .ticktets__tabs-button:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .tickets__tabs-items ul {
+    padding: 0;
+    gap: 35px;
+  }
+
+  .tickets__tabs-items li {
+    min-width: auto;
+    padding: 44px 32px 46px;
+  }
+
+  .tickets__tabs-items h3 {
+    font-size: 22px;
+    line-height: 110.16%;
+    margin-bottom: 8px;
+  }
+
+  .tickets__tabs-about {
+    margin-bottom: 56px;
+  }
+
+  .tickets__tabs-items .tickets__tabs-price-bg {
+    font-size: 80px;
+  }
+
+  .tickets__tabs-price {
+    margin-bottom: 38px;
+  }
+
+  .tickets__tabs-price {
+    font-size: 48px;
+    margin-bottom: 28px;
+  }
+
+  .tickets__tabs-price svg {
+    width: 24px;
+    height: 33px;
   }
 }
 

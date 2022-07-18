@@ -14,11 +14,11 @@
   display: flex;
   margin-left: 98px;
 
-  @media (max-width: $tablet)  {
+  @media (max-width: $tablet) {
     margin-left: 26px;
   }
 
-  @media (max-width: $mobile)  {
+  @media (max-width: $mobile) {
     margin-left: 0;
     justify-content: center;
   }

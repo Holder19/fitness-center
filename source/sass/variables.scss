@@ -12,6 +12,11 @@ $color-feedback-bg:                 #1c3374;
 $color-tickets-font:                #103aae;
 $color-card-red:                    #ed0233;
 $color-gray-background:             rgba(232, 232, 232, 1);
+$color-gray-tickets-bg:             #f8f9fc;
+$color-gray-tabs-border:            rgba(120, 120, 120, 0.2);
+$color-tabs-button-font:            rgba(16, 38, 84, 0.5);
+$color-tabs-text:                   #495a7d;
+$color-tabs-text-bg:                #e8e8e8;
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
@@ -21,12 +26,13 @@ $color-torch-red:                   #ff1553;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$main-screen-gradient:              conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$main-screen-gradient-tablet:       conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$main-screen-gradient-mobile:       conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$main-gradient-colors:              linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
-$video-bg-color:                   rgba(20, 54, 122, 0.5);
-$video-button-gradient:             linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+$main-screen-gradient:              conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$main-screen-gradient-tablet:       conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$main-screen-gradient-mobile:       conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$main-gradient-colors:              linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+$video-bg-color:                    rgba(20, 54, 122, 0.5);
+$video-button-gradient:             linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+$button-tabs-gradient:              linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 // Typography
 // ---------------------------------
 
@@ -37,7 +43,7 @@ $lh-default:                        150%;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
-$ff-neue:                           "Bebas Neue", "Arial", sans-serif;
+$ff-neue:                           "Bebas Neue", "Ubuntu Mono", monospace;
 $ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
 $fw-default:                        400;
 
