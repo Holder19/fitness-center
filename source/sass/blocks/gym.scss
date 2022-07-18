@@ -4,7 +4,7 @@
   justify-items: center;
 
   @media (min-width: $desktop) and (max-width: 1280px) {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   @media (max-width: $tablet) {
@@ -70,7 +70,6 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 26px;
-
   }
 }
 
@@ -121,6 +120,10 @@
     grid-column: auto;
     grid-row: auto;
   }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 .gym__content img {
@@ -148,7 +151,6 @@
   z-index: 1;
   grid-row: 2/2;
   transform: translate(10px, -112px);
-  align-items: center;
   justify-items: center;
 
   @media (max-width: $tablet) {
@@ -159,6 +161,8 @@
 
   @media (max-width: $mobile) {
     transform: translate(0, 0);
+    justify-content: stretch;
+    width: 100%;
   }
 }
 
@@ -167,6 +171,9 @@
   grid-row: 1/1;
   grid-column: 1/1;
 
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 .gym__video-media {
