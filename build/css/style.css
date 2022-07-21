@@ -250,6 +250,10 @@ button,
   padding-bottom: 7px;
 }
 
+.page__tickets {
+  margin-bottom: 120px;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,7 +283,7 @@ button,
 }
 
 .main__bg {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   width: 100%;
   position: absolute;
   min-height: 658px;
@@ -434,6 +438,15 @@ button,
   padding: 23px 43px;
 }
 
+.button--promo {
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  width: 100%;
+  padding: 23px 50px;
+  max-width: 343px;
+}
+
 .gym__inner-wrapper {
   display: -ms-grid;
   display: grid;
@@ -509,7 +522,6 @@ button,
   -webkit-transform: translate(10px, -112px);
   -ms-transform: translate(10px, -112px);
   transform: translate(10px, -112px);
-  align-items: center;
   justify-items: center;
 }
 
@@ -535,8 +547,8 @@ button,
   height: 72px;
   border-radius: 50%;
   border: none;
-  background-image: -o-linear-gradient(45.11deg, #003D85 25.38%, #B80027 74.89%);
-  background-image: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  background-image: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
+  background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   cursor: pointer;
   z-index: 1;
   position: relative;
@@ -671,21 +683,21 @@ button,
 }
 
 .tickets__tabs-items li:hover {
-  -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
 }
 
 .tickets__tabs-items li:focus {
-  -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
 }
 
 .tickets__tabs-items li:focus .button--tabs,
 .tickets__tabs-items li:hover .button--tabs {
-  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
 }
 
@@ -737,6 +749,140 @@ button,
   margin-bottom: 36px;
 }
 
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.promo__description {
+  padding: 83px 70px 83px 79px;
+  background-color: #ed0233;
+}
+
+.promo__description-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 201px -webkit-max-content;
+  -ms-grid-columns: 201px max-content;
+  grid-template-columns: 201px -webkit-max-content;
+  grid-template-columns: 201px max-content;
+  gap: 50px;
+  margin-bottom: 7px;
+}
+
+.promo__description-wrapper h2 {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 90px;
+  line-height: 90px;
+  font-family: "Bebas Neue", "Ubuntu Mono", monospace;
+  letter-spacing: 0.03em;
+}
+
+.promo__description-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: -4px;
+}
+
+.promo__description-wrapper li {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.promo__description-wrapper li::before {
+  content: "";
+  width: 64px;
+  height: 1px;
+  position: absolute;
+  background-color: #ffffff;
+  top: 32px;
+}
+
+.promo__description-wrapper li:last-child {
+  margin-bottom: 0;
+}
+
+.promo__description-wrapper li:last-child::before {
+  content: "";
+  width: 88px;
+}
+
+.promo__description-wrapper h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.promo__description-wrapper p {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+}
+
+.promo__description-wrapper span,
+.promo__description-wrapper small {
+  font-size: 14px;
+  font-weight: 400;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  color: #ffffff;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+}
+
+.promo__description-wrapper small {
+  -webkit-transform: translate(-46px, 8px);
+  -ms-transform: translate(-46px, 8px);
+  transform: translate(-46px, 8px);
+}
+
+.promo__description h5 {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+}
+
+.promo__content img {
+  height: 500px;
+  width: 660px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -751,6 +897,10 @@ button,
 
   .page__gym {
     padding-bottom: 15px;
+  }
+
+  .page__tickets {
+    margin-bottom: 100px;
   }
 
   .header__wrapper {
@@ -771,7 +921,7 @@ button,
 
   .main__bg {
     min-height: 554px;
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .main__intro {
@@ -824,6 +974,15 @@ button,
   .button--intro {
     width: 183px;
     padding: 17px 27px;
+  }
+
+  .button--promo {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 9px 30px;
+    min-height: 39px;
+    border-width: 2px;
+    max-width: 202px;
   }
 
   .gym__inner-wrapper {
@@ -940,6 +1099,74 @@ button,
   .tickets__tabs-items h3 {
     margin-bottom: 12px;
   }
+
+  .promo__description {
+    padding: 47px 31px 33px 44px;
+  }
+
+  .promo__description-wrapper {
+    gap: 28px;
+    margin-bottom: 0;
+    -ms-grid-columns: 117px -webkit-max-content;
+    -ms-grid-columns: 117px max-content;
+    grid-template-columns: 117px -webkit-max-content;
+    grid-template-columns: 117px max-content;
+  }
+
+  .promo__description-wrapper h2 {
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .promo__description-wrapper li {
+    margin-bottom: 0;
+  }
+
+  .promo__description-wrapper li::before {
+    content: "";
+    width: 42px;
+    top: 20px;
+  }
+
+  .promo__description-wrapper li:last-child::before {
+    content: "";
+    width: 56px;
+  }
+
+  .promo__description-wrapper h4 {
+    font-size: 12px;
+  }
+
+  .promo__description-wrapper p {
+    font-size: 24px;
+  }
+
+  .promo__description-wrapper span,
+  .promo__description-wrapper small {
+    font-size: 10px;
+  }
+
+  .promo__description-wrapper span {
+    -webkit-transform: translate(-10px, -5px);
+    -ms-transform: translate(-10px, -5px);
+    transform: translate(-10px, -5px);
+  }
+
+  .promo__description-wrapper small {
+    -webkit-transform: translate(-35px, 7px);
+    -ms-transform: translate(-35px, 7px);
+    transform: translate(-35px, 7px);
+  }
+
+  .promo__description h5 {
+    font-size: 12px;
+    margin-bottom: 31px;
+  }
+
+  .promo__content img {
+    width: 386px;
+    height: 292px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -953,6 +1180,10 @@ button,
 
   .page__gym {
     padding-bottom: 70px;
+  }
+
+  .page__tickets {
+    margin-bottom: 70px;
   }
 
   .header__wrapper {
@@ -972,7 +1203,7 @@ button,
 
   .main__bg {
     min-height: 491px;
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .main__intro {
@@ -1146,6 +1377,26 @@ button,
     width: 24px;
     height: 33px;
   }
+
+  .promo__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .promo__description {
+    padding-bottom: 52px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .promo__content img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1365px) {
@@ -1156,6 +1407,6 @@ button,
 
 @media (min-width: 1200px) and (max-width: 1280px) {
   .gym__inner-wrapper {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
