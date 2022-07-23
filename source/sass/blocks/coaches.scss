@@ -1,0 +1,215 @@
+.coaches h2 {
+  font-family: $ff-neue;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 49px;
+  color: $color-default-font;
+
+  @media (max-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 42px;
+  }
+}
+
+.coaches .page__leveler {
+  position: relative;
+}
+
+.coaches__swiper {
+  width: 1160px;
+  height: 100%;
+
+  @media (max-width: $tablet) {
+    width: 566px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 226px;
+  }
+}
+
+.coaches__swiper-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.coaches__swiper-slide {
+  width: 260px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.coaches__slide-content {
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  z-index: 1;
+}
+
+.coaches__slide-img-wrapper {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.coaches__slide-img-wrapper img {
+  width: 260px;
+  height: 294px;
+  object-fit: cover;
+
+  @media (max-width: $tablet) {
+    width: 268px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.coaches__slide-img-wrapper img[data-fit="none"] {
+  object-fit: none;
+}
+
+.coaches__slide-content h3 {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-default-white;
+  justify-self: center;
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+
+.coaches__slide-descrption {
+  background-color: $color-coaches-bg;
+  padding: 51px 46px 31px 53px;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+  @media (max-width: $mobile) {
+    padding: 42px 31px 37px 34px;
+  }
+}
+
+.coaches__swiper-slide:hover .coaches__slide-descrption,
+.coaches__swiper-slide:focus-within .coaches__slide-descrption {
+  z-index: 2;
+}
+
+.coaches__swiper-slide:hover .coaches__slide-content h3,
+.coaches__swiper-slide:focus-within .coaches__slide-content h3 {
+  z-index: -1;
+}
+
+
+.coaches__slide-descrption h3 {
+  color: $color-default-white;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.coaches__slide-descrption span {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-tabs-text;
+  margin-bottom: 30px;
+  width: auto;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 29px;
+  }
+}
+
+.coaches__slide-descrption ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 18px;
+}
+
+.coaches__slide-descrption li {
+  margin: 0;
+  padding: 0;
+  color: $color-default-white;
+  list-style-type: disc;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 13px;
+
+  &::marker {
+    font-size: 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.coaches__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  color: $color-tabs-text;
+
+  &::after {
+    font-size: 33px;
+  }
+
+  &--next {
+    right: -63px;
+    top: 244px;
+  }
+
+  &--prev {
+    left: -63px;
+    top: 244px;
+  }
+
+  @media (max-width: $tablet) {
+    &--next {
+      right: -6px;
+      top: 226px;
+    }
+
+    &--prev {
+      left: -6px;
+      top: 226px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &--next {
+      right: -8px;
+      top: 213px;
+    }
+
+    &--prev {
+      left: -8px;
+      top: 213px;
+    }
+
+    &::after {
+      font-size: 21px;
+    }
+  }
+}

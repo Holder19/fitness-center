@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {findVideos} from './modules/modals/video';
+import {findVideos} from './modules/video';
 import {tabsActive} from './modules/tabs';
-
+import {initSwiper} from './vendor';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -10,7 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
   iosVhFix();
-  findVideos();
+  initSwiper();
+
   // Modules
   // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     tabsActive();
+    findVideos();
   });
 });
 
