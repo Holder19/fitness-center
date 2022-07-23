@@ -1,12 +1,3 @@
-// function setupVideo(video) {
-//   let link = video.querySelector('.gym__video-link');
-//   let media = video.querySelector('.gym__video-media');
-//   let button = video.querySelector('.gym__video-button');
-//   let id = parseMediaURL(media);
-// }
-
-// export {setupVideo};
-
 function findVideos() {
   let videos = document.querySelectorAll('.gym__video');
 

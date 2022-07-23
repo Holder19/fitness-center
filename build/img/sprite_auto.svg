@@ -3,7 +3,11 @@
 <stop stop-color="#ED0233"/>
 <stop offset="1" stop-color="#003EB7"/>
 </linearGradient>
-</defs><symbol id="icon-circle-button" viewBox="0 0 73 73">
+</defs><symbol id="icon-arrow-left" viewBox="0 0 18 34">
+<path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"/>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 18 34">
+<path d="M1 1L17 17L1 33" stroke="#AFAFAF"/>
+</symbol><symbol id="icon-circle-button" viewBox="0 0 73 73">
 <circle cx="36.5" cy="36.5" r="35.5" stroke="url(#paint0_linear_1_293)" stroke-opacity="0.2" stroke-width="2"/>
 
 </symbol><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol><symbol id="icon-fb" viewBox="0 0 12 24">
