@@ -1,0 +1,209 @@
+.stocks h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: $ff-neue;
+  color: $color-default-font;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 41px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 42px;
+  }
+}
+
+.stocks__wrapper {
+  display: flex;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.stocks__card {
+  display: flex;
+  margin-right: 40px;
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.stocks__card-description {
+  background-color: $color-card-red;
+  padding: 35px 45px 45px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile) {
+    min-height: 299px;
+  }
+}
+
+.stocks__card-description h3 {
+  font-size: 28px;
+  line-height: 156%;
+  color: $color-default-white;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
+}
+
+.stocks__card-description strong {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 77%;
+  color: $color-default-white;
+  margin-bottom: 28px;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+    line-height: 83%;
+    margin-bottom: 20px;
+  }
+}
+
+.stocks__card-description h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: $color-default-white;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
+}
+
+.stocks__card-description a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.05em;
+  margin-top: auto;
+
+  @media (max-width: $mobile) {
+    align-self: center;
+  }
+}
+
+.stocks__card-content img {
+  width: 280px;
+  height: 462px;
+  object-fit: cover;
+
+  @media (max-width: $tablet) {
+    width: 399px;
+    height: 462px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    height: 299px;
+  }
+}
+
+.stocks__advantageous {
+  flex-grow: 1;
+}
+
+.stocks__advantageous ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 40px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    grid-template-columns: none;
+  }
+}
+
+.stocks__advantageous li {
+  margin: 0;
+  border: 7px solid;
+  border-image: $stocks-border-color;
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 35px 29px 28px;
+  min-height: 211px;
+
+  @media (max-width: $mobile) {
+    align-items: center;
+    padding: 36px 28px 29px 28px;
+  }
+}
+
+.stocks__advantageous h3 {
+  font-size: 26px;
+  color: $color-feedback-bg;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+}
+
+.stocks__advantageous h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: $color-feedback-bg;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet) {
+    &:first-child {
+      max-width: 153px;
+    }
+
+    @media (max-width: $mobile) {
+      text-align: center;
+
+      &:first-child {
+        max-width: auto;
+      }
+    }
+  }
+}
+
+.stocks__advantageous a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-feedback-bg;
+  margin-top: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 10px;
+  }
+}

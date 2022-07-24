@@ -1172,6 +1172,10 @@ button,
   margin-bottom: 120px;
 }
 
+.page__features {
+  margin-bottom: 120px;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2111,6 +2115,147 @@ button,
   color: #102654;
 }
 
+.stocks h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue", "Ubuntu Mono", monospace;
+  color: #102654;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+}
+
+.stocks__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stocks__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+}
+
+.stocks__card-description {
+  background-color: #ed0233;
+  padding: 35px 45px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.stocks__card-description h3 {
+  font-size: 28px;
+  line-height: 156%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.stocks__card-description strong {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 77%;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.stocks__card-description h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.stocks__card-description a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.05em;
+  margin-top: auto;
+}
+
+.stocks__card-content img {
+  width: 280px;
+  height: 462px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.stocks__advantageous {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.stocks__advantageous ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+}
+
+.stocks__advantageous li {
+  margin: 0;
+  padding: 0;
+  border: 7px solid;
+  -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
+  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-slice: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 25px 35px 29px 28px;
+  min-height: 211px;
+}
+
+.stocks__advantageous h3 {
+  font-size: 26px;
+  color: #1c3374;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+}
+
+.stocks__advantageous h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1c3374;
+  margin: 0;
+  padding: 0;
+}
+
+.stocks__advantageous a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1c3374;
+  margin-top: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2136,6 +2281,10 @@ button,
   }
 
   .page__coaches {
+    margin-bottom: 100px;
+  }
+
+  .page__features {
     margin-bottom: 100px;
   }
 
@@ -2522,6 +2671,49 @@ button,
     font-size: 20px;
     margin-bottom: 0;
   }
+
+  .stocks h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 41px;
+  }
+
+  .stocks__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stocks__card {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .stocks__card-content img {
+    width: 399px;
+    height: 462px;
+  }
+
+  .stocks__advantageous ul {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .stocks__advantageous h4:first-child {
+    max-width: 153px;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 767px) {
+  .stocks__advantageous h4 {
+    text-align: center;
+  }
+
+  .stocks__advantageous h4:first-child {
+    max-width: auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2546,6 +2738,10 @@ button,
   }
 
   .page__coaches {
+    margin-bottom: 70px;
+  }
+
+  .page__features {
     margin-bottom: 70px;
   }
 
@@ -2887,6 +3083,64 @@ button,
 
   .features__item p {
     text-align: center;
+  }
+
+  .stocks h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 42px;
+  }
+
+  .stocks__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stocks__card-description {
+    min-height: 299px;
+  }
+
+  .stocks__card-description h3 {
+    text-align: center;
+  }
+
+  .stocks__card-description strong {
+    text-align: center;
+    line-height: 83%;
+    margin-bottom: 20px;
+  }
+
+  .stocks__card-description h4 {
+    text-align: center;
+  }
+
+  .stocks__card-description a {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .stocks__card-content img {
+    width: 100%;
+    height: 299px;
+  }
+
+  .stocks__advantageous ul {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .stocks__advantageous li {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 36px 28px 29px 28px;
+  }
+
+  .stocks__advantageous a {
+    margin-bottom: 10px;
   }
 }
 
