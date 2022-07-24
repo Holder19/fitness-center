@@ -1176,6 +1176,10 @@ button,
   margin-bottom: 120px;
 }
 
+.page__stocks {
+  margin-bottom: 120px;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1939,6 +1943,7 @@ button,
   cursor: pointer;
   position: absolute;
   color: #495a7d;
+  opacity: 0.8;
 }
 
 .coaches__button::after {
@@ -2212,10 +2217,9 @@ button,
 
 .stocks__advantageous li {
   margin: 0;
-  padding: 0;
   border: 7px solid;
-  -o-border-image: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2256,6 +2260,97 @@ button,
   text-decoration: underline;
 }
 
+.feedback h2 {
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  color: #102654;
+  font-family: "Bebas Neue", "Ubuntu Mono", monospace;
+  text-align: center;
+}
+
+.feedback .page__leveler {
+  position: relative;
+}
+
+.feedback__swiper {
+  width: 560px;
+}
+
+.feedback__swiper-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feedback__swiper-slide {
+  margin: 0;
+  padding: 55px 62px;
+  background-color: #1c3374;
+}
+
+.feedback__swiper-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 328px;
+  grid-template-columns: 80px 328px;
+  gap: 28px;
+}
+
+.feedback__swiper-img-wrapper {
+  margin-top: 7px;
+}
+
+.feedback__swiper-img-wrapper img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.feedback__swiper-text h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.feedback__swiper-text p {
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__button {
+  background: none;
+  border: none;
+  position: absolute;
+  color: #495a7d;
+  opacity: 0.8;
+  top: 220px;
+  cursor: pointer;
+}
+
+.feedback__button::after {
+  font-size: 33px;
+}
+
+.feedback__button--next {
+  right: 237px;
+}
+
+.feedback__button--prev {
+  left: 237px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2285,6 +2380,10 @@ button,
   }
 
   .page__features {
+    margin-bottom: 100px;
+  }
+
+  .page__stocks {
     margin-bottom: 100px;
   }
 
@@ -2688,6 +2787,9 @@ button,
   .stocks__card {
     margin-right: 0;
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .stocks__card-content img {
@@ -2703,6 +2805,32 @@ button,
 
   .stocks__advantageous h4:first-child {
     max-width: 153px;
+  }
+
+  .feedback h2 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 40px;
+  }
+
+  .feedback__swiper {
+    width: 566px;
+  }
+
+  .feedback__swiper-slide {
+    padding-left: 65px;
+  }
+
+  .feedback__button {
+    top: 204px;
+  }
+
+  .feedback__button--next {
+    right: -4px;
+  }
+
+  .feedback__button--prev {
+    left: -4px;
   }
 }
 
@@ -2742,6 +2870,10 @@ button,
   }
 
   .page__features {
+    margin-bottom: 70px;
+  }
+
+  .page__stocks {
     margin-bottom: 70px;
   }
 
@@ -3141,6 +3273,67 @@ button,
 
   .stocks__advantageous a {
     margin-bottom: 10px;
+  }
+
+  .feedback h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 42px;
+  }
+
+  .feedback__swiper {
+    width: 226px;
+  }
+
+  .feedback__swiper-slide {
+    padding: 40px 25px 34px;
+  }
+
+  .feedback__swiper-content {
+    -ms-grid-columns: 80px 62px;
+    grid-template-columns: 80px 62px;
+    row-gap: 14px;
+  }
+
+  .feedback__swiper-img-wrapper {
+    margin-top: 0;
+    margin-left: 19px;
+  }
+
+  .feedback__swiper-img-wrapper img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .feedback__swiper-text--mobile-off {
+    display: contents;
+  }
+
+  .feedback__swiper-text h3 {
+    margin-bottom: 0;
+    margin-top: 4px;
+    margin-left: -8px;
+  }
+
+  .feedback__swiper-text p {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  .feedback__button {
+    top: 242px;
+  }
+
+  .feedback__button--next {
+    right: -9px;
+  }
+
+  .feedback__button--prev {
+    left: -9px;
+  }
+
+  .feedback__button::after {
+    font-size: 21px;
   }
 }
 

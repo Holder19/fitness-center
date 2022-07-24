@@ -2,24 +2,38 @@
 import './vendor/swiper';
 
 const initSwiper = () => {
-  let swiper = new Swiper('.mySwiper', {
+  let swiper = new Swiper('.coaches__swiper', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.coaches__button--next',
+      prevEl: '.coaches__button--prev',
     },
     breakpoints: {
       320: {
         slidesPerView: 1,
+        allowTouchMove: true,
       },
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
+        allowTouchMove: true,
       },
       1200: {
         slidesPerView: 4,
         spaceBetween: 40,
+        allowTouchMove: false,
       },
     },
   });
 };
-export {initSwiper};
+
+const feedbackSwiper = () => {
+  let swiper = new Swiper('.feedback__swiper', {
+    navigation: {
+      nextEl: '.feedback__button--next',
+      prevEl: '.feedback__button--prev',
+    },
+    slidesPerView: 1,
+    allowTouchMove: false,
+  });
+};
+export {initSwiper, feedbackSwiper};
