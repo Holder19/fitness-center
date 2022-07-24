@@ -170,6 +170,7 @@
   cursor: pointer;
   position: absolute;
   color: $color-tabs-text;
+  opacity: 0.8;
 
   &::after {
     font-size: 33px;
