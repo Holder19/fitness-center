@@ -29,5 +29,4 @@ const tabsActive = () => {
 
 };
 
-
 export {tabsActive};
