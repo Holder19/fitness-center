@@ -117,13 +117,13 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 70px 179px 70px 133px;
+    padding: 70px 179px 63px 133px;
     display: grid;
     justify-content: center;
   }
 
   @media (max-width: $mobile) {
-    padding: 70px 15px;
+    padding: 70px 15px 59px;
     justify-content: start;
   }
 }

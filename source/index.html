@@ -7,9 +7,19 @@
     <meta name="description" content="Описание проекта">
     <title>Fitness Center</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/Robotocondensed.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Robotocondensedlight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/bebasneuebold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/bebasneueregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
   </head>
   <body class="page__body">
-    <header class="page__header">
+    <header class="page__header header">
       <div class="page__leveler">
         <div class="header__wrapper">
           <a class="header__logo logo">
@@ -21,7 +31,7 @@
               </picture>
             </div>
           </a>
-          <a class="header__phone" href="tel:+7 800-555-55-55">8-800-555-55-55</a>
+          <a class="header__phone" href="tel:+7-800-555-55-55">8-800-555-55-55</a>
         </div>
       </div>
     </header>
@@ -40,14 +50,14 @@
                   <li>Кардио-зона</li>
                 </ul>
               </div>
-              <a href="#" class="button button--intro">Купить абонемент</a>
+              <a href="#buy" class="button button--intro">Купить абонемент</a>
             </div>
             <div class="intro__content-img">
               <picture>
 
                 <source media="(min-width: 1200px)" type="image/webp" srcset="./img/content/main-screen-desktop-img@1x.webp 1x, ./img/content/main-screen-desktop-img@2x.webp 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="./img/content/main-screen-tablet-img@1x.webp 1x, ./img/content/main-screen-tablet-img@2x.webp 2x">
-                <img src="./img/content/main-screen-desktop-img@1x.jpg", srcset="./img/content/main-screen-desktop-img@2x.jpg 2x" alt="Фото тренера в футболке супермена" width="500" height="556">
+                <img src="./img/content/main-screen-desktop-img@1x.jpg" srcset="./img/content/main-screen-desktop-img@2x.jpg 2x" alt="Фото тренера в футболке супермена" width="500" height="556">
               </picture>
             </div>
             <div class="intro__links">
@@ -103,14 +113,14 @@
         </div>
       </section>
 
-      <section class="page__tickets tickets">
+      <section class="page__tickets tickets" id="buy">
         <div class="page__leveler">
           <h2>Абонементы</h2>
-          <div class="ticktets__tabs">
+          <div class="tickets__tabs">
             <div class="tickets__tabs-nav">
-              <button class="ticktets__tabs-button ticktets__tabs-button--active" data-tab ="#tab-1-month" type="button">1 месяц</button>
-              <button class="ticktets__tabs-button" type="button" data-tab ="#tab-6-months">6 месяцев</button>
-              <button class="ticktets__tabs-button" type="button" data-tab ="#tab-12-months">12 месяцев</button>
+              <button class="tickets__tabs-button tickets__tabs-button--active" data-tab ="#tab-1-month" type="button">1 месяц</button>
+              <button class="tickets__tabs-button" type="button" data-tab ="#tab-6-months">6 месяцев</button>
+              <button class="tickets__tabs-button" type="button" data-tab ="#tab-12-months">12 месяцев</button>
             </div>
             <div class="tickets__tabs-items tickets__tabs-items--active" id="tab-1-month">
               <ul>
@@ -247,7 +257,7 @@
                   </li>
                 </ul>
               </div>
-              <h5>Ежегодные соревнования по CrossFit</h4>
+              <h5>Ежегодные соревнования по CrossFit</h5>
               <a href="#" class="button button--promo">заполнить заявку</a>
             </div>
             <div class="promo__content">
@@ -565,7 +575,7 @@
       </section>
       <section class="page__contacts contacts">
         <div class="contacts__layout-wrapper">
-          <div class="contacts__form">
+          <div class="contacts__form" id="form">
             <h2>БЕСПЛАТНОЕ занятие </h2>
             <div class="contacts__form-wrapper">
               <form action="https://echo.htmlacademy.ru/" method="post">
@@ -576,7 +586,7 @@
                   </li>
                   <li>
                     <label for="phone-field"><span class="visually-hidden">Введите ваш телефон</span></label>
-                    <input data-input = "tel"type="tel" name="phone" id="phone-field" required placeholder="Телефон">
+                    <input data-input = "tel" type="tel" name="phone" id="phone-field" required placeholder="Телефон">
                   </li>
                 </ul>
                 <button class="button button--submit" type="submit">отправить</button>
@@ -617,7 +627,69 @@
         </div>
       </section>
     </main>
-    <footer>f</footer>
+    <footer class="page__footer footer">
+      <div class="page__leveler">
+        <div class="footer__wrapper">
+          <a class="footer__logo">
+            <div class="footer__logo-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/sprite/icon-logo-mobile.svg">
+                <source media="(max-width: 1199px)" srcset="./img/sprite/icon-logo-tablet.svg">
+                <img src="./img/sprite/icon-logo.svg" width="89" height="20" alt="Логотип">
+              </picture>
+            </div>
+          </a>
+          <div class="footer__features">
+            <ul>
+              <li>
+                <a href="#">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Абонементы</a>
+              </li>
+              <li class="footer__features-wrapper">
+                <ul>
+                  <li>
+                    <a href="#">Акции</a>
+                  </li>
+                  <li>
+                    <a href="#">Тренеры</a>
+                  </li>
+                  <li>
+                    <a href="#">Расписание</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <ul>
+              <li>
+                <a href="#" aria-label="ссылка на наш вк">
+                  <svg width ="24" height ="13">
+                    <use xlink:href ="./img/sprite_auto.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="ссылка на наш инстаграмм">
+                  <svg width ="24" height ="24">
+                    <use xlink:href ="./img/sprite_auto.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="ссылка на наш фейсбук">
+                  <svg width ="24" height ="24">
+                    <use xlink:href ="./img/sprite_auto.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>

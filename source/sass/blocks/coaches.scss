@@ -20,6 +20,10 @@
     line-height: 32px;
     margin-bottom: 42px;
   }
+
+  @media (min-width: $vp-1440) {
+    text-align: center;
+  }
 }
 
 .coaches .page__leveler {

@@ -1,5 +1,5 @@
-const tabs = document.querySelector('.ticktets__tabs');
-const tabsBtns = tabs.querySelectorAll('.ticktets__tabs-button');
+const tabs = document.querySelector('.tickets__tabs');
+const tabsBtns = tabs.querySelectorAll('.tickets__tabs-button');
 const tabsItems = tabs.querySelectorAll('.tickets__tabs-items');
 
 
@@ -13,14 +13,14 @@ const tabsActive = () => {
 
       if (!currentBtn.classList.contains('button--tabs-active')) {
         tabsBtns.forEach((button) => {
-          button.classList.remove('ticktets__tabs-button--active');
+          button.classList.remove('tickets__tabs-button--active');
         });
 
         tabsItems.forEach((tabItem) => {
           tabItem.classList.remove('tickets__tabs-items--active');
         });
 
-        currentBtn.classList.add('ticktets__tabs-button--active');
+        currentBtn.classList.add('tickets__tabs-button--active');
         currentTab.classList.add('tickets__tabs-items--active');
       }
 
