@@ -105,3 +105,15 @@
     margin-bottom: 70px;
   }
 }
+
+.page__feedback {
+  margin-bottom: 120px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 70px;
+  }
+}

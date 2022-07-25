@@ -30,6 +30,10 @@
   width: 1160px;
   height: 100%;
 
+  @media (min-width: $desktop) and (max-width: $vp-1365) {
+    width: 830px;
+  }
+
   @media (max-width: $tablet) {
     width: 566px;
   }
@@ -177,12 +181,12 @@
   }
 
   &--next {
-    right: -63px;
+    right: -5.4%;
     top: 244px;
   }
 
   &--prev {
-    left: -63px;
+    left: -5.4%;
     top: 244px;
   }
 
