@@ -147,6 +147,16 @@
     left: 237px;
   }
 
+  @media (min-width: $desktop) and (max-width: $vp-1365) {
+    &--next {
+      right: 150px;
+    }
+
+    &--prev {
+      left: 150px;
+    }
+  }
+
   @media (max-width: $tablet) {
     top: 204px;
 

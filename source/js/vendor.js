@@ -18,6 +18,11 @@ const initSwiper = () => {
         allowTouchMove: true,
       },
       1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        allowTouchMove: false,
+      },
+      1366: {
         slidesPerView: 4,
         spaceBetween: 40,
         allowTouchMove: false,

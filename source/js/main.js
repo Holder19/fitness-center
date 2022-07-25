@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {findVideos} from './modules/video';
 import {tabsActive} from './modules/tabs';
 import {feedbackSwiper, initSwiper} from './vendor';
+import {addListenersOnForm} from './modules/form';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     tabsActive();
     findVideos();
     feedbackSwiper();
+    addListenersOnForm();
   });
 });
 
