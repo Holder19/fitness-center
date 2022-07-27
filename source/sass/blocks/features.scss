@@ -45,6 +45,10 @@
     "comfort equipment experience";
   margin-left: 44px;
 
+  @media (min-width: $desktop) and (max-width: $vp-1365) {
+    margin-left: 0;
+  }
+
   @media (min-width: $desktop) and (max-width: 1365px) {
     column-gap: 20px;
   }
@@ -138,8 +142,11 @@
   padding: 39px 32px 30px 30px;
   background-color: $color-feedback-bg;
   width: 240px;
-  height: 307px;
   margin-top: 6px;
+
+  @media (min-width: $desktop) and (max-width: $vp-1365) {
+    height: auto;
+  }
 
   @media (max-width: $tablet) {
     justify-self: center;

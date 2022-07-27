@@ -24,15 +24,21 @@
 
 .stocks__wrapper {
   display: flex;
+  align-items: start;
 
   @media (max-width: $tablet) {
     flex-direction: column;
+  }
+
+  @media (max-width: $mobile) {
+    align-items: initial;
   }
 }
 
 .stocks__card {
   display: flex;
   margin-right: 40px;
+  align-items: stretch;
 
   @media (max-width: $tablet) {
     margin-right: 0;
@@ -42,6 +48,7 @@
 
   @media (max-width: $mobile) {
     flex-direction: column;
+    align-self: center;
   }
 }
 
@@ -50,9 +57,14 @@
   padding: 35px 45px 45px;
   display: flex;
   flex-direction: column;
+  max-width: 300px;
 
+  @media (max-width: $tablet) {
+    max-width: none;
+  }
   @media (max-width: $mobile) {
     min-height: 299px;
+    width: 290px;
   }
 }
 
@@ -121,7 +133,7 @@
   }
 
   @media (max-width: $mobile) {
-    width: 100%;
+    width: 290px;
     height: 299px;
   }
 }
@@ -136,10 +148,12 @@
   list-style: none;
   display: grid;
   gap: 40px;
+  max-width: 600px;
 
   @media (max-width: $tablet) {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    max-width: none;
   }
 
   @media (max-width: $mobile) {
@@ -203,6 +217,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-decoration: underline;
+  width: max-content;
 
   @media (max-width: $mobile) {
     margin-bottom: 10px;

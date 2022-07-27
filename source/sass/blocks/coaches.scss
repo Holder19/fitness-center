@@ -108,9 +108,13 @@
   padding: 51px 46px 31px 53px;
   grid-column: 1/-1;
   grid-row: 1/-1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 294px;
 
   @media (max-width: $mobile) {
     padding: 42px 31px 37px 34px;
+    height: 274px;
   }
 }
 

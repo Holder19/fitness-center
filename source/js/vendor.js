@@ -7,6 +7,7 @@ const initSwiper = () => {
       nextEl: '.coaches__button--next',
       prevEl: '.coaches__button--prev',
     },
+    loop: true,
     breakpoints: {
       320: {
         slidesPerView: 1,

@@ -1291,9 +1291,7 @@ button,
 }
 
 .intro__links {
-  -ms-flex-item-align: end;
-  -ms-grid-row-align: end;
-  align-self: end;
+  margin-top: auto;
   margin-left: auto;
   margin-bottom: 40px;
 }
@@ -1624,10 +1622,11 @@ button,
   display: grid;
   justify-items: center;
   border: 7px solid;
-  border-color: transparent;
+  border-color: #ffffff;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+  position: relative;
 }
 
 .tickets__tabs-items li:hover {
@@ -1668,7 +1667,6 @@ button,
 }
 
 .tickets__tabs-items span {
-  font-family: "Rouble", "Arial", sans-serif;
   color: #102654;
   display: inline-block;
 }
@@ -1680,9 +1678,8 @@ button,
   line-height: 150%;
   color: #e8e8e8;
   opacity: 0.48;
-  -webkit-transform: translate(-2px, 60px);
-  -ms-transform: translate(-2px, 60px);
-  transform: translate(-2px, 60px);
+  position: absolute;
+  top: 127px;
 }
 
 .tickets__tabs-price {
@@ -1709,6 +1706,7 @@ button,
 .promo__description {
   padding: 83px 70px 83px 79px;
   background-color: #ed0233;
+  max-width: 500px;
 }
 
 .promo__description-wrapper {
@@ -1904,6 +1902,9 @@ button,
   padding: 51px 46px 31px 53px;
   grid-column: 1/-1;
   grid-row: 1/-1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 294px;
 }
 
 .coaches__swiper-slide:hover .coaches__slide-descrption,
@@ -2066,7 +2067,6 @@ button,
   padding: 39px 32px 30px 30px;
   background-color: #1c3374;
   width: 240px;
-  height: 307px;
   margin-top: 6px;
 }
 
@@ -2158,6 +2158,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
 .stocks__card {
@@ -2165,6 +2168,9 @@ button,
   display: -ms-flexbox;
   display: flex;
   margin-right: 40px;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .stocks__card-description {
@@ -2177,6 +2183,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-width: 300px;
 }
 
 .stocks__card-description h3 {
@@ -2235,6 +2242,7 @@ button,
   display: -ms-grid;
   display: grid;
   gap: 40px;
+  max-width: 600px;
 }
 
 .stocks__advantageous li {
@@ -2280,6 +2288,9 @@ button,
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-decoration: underline;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .feedback h2 {
@@ -2886,6 +2897,7 @@ button,
 
   .promo__description {
     padding: 47px 31px 33px 44px;
+    max-width: none;
   }
 
   .promo__description-wrapper {
@@ -3092,6 +3104,10 @@ button,
     justify-content: center;
   }
 
+  .stocks__card-description {
+    max-width: none;
+  }
+
   .stocks__card-content img {
     width: 399px;
     height: 462px;
@@ -3101,6 +3117,7 @@ button,
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    max-width: none;
   }
 
   .stocks__advantageous h4:first-child {
@@ -3405,10 +3422,13 @@ button,
 
   .gym__video-link {
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .gym__video-media {
-    width: 100%;
+    width: 320px;
   }
 
   .gym__video-button svg {
@@ -3464,6 +3484,7 @@ button,
 
   .tickets__tabs-items .tickets__tabs-price-bg {
     font-size: 80px;
+    top: 113px;
   }
 
   .tickets__tabs-price {
@@ -3517,6 +3538,7 @@ button,
 
   .coaches__slide-descrption {
     padding: 42px 31px 37px 34px;
+    height: 274px;
   }
 
   .coaches__slide-descrption span {
@@ -3634,15 +3656,25 @@ button,
     margin-bottom: 42px;
   }
 
+  .stocks__wrapper {
+    -webkit-box-align: initial;
+    -ms-flex-align: initial;
+    align-items: initial;
+  }
+
   .stocks__card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .stocks__card-description {
     min-height: 299px;
+    width: 290px;
   }
 
   .stocks__card-description h3 {
@@ -3666,7 +3698,7 @@ button,
   }
 
   .stocks__card-content img {
-    width: 100%;
+    width: 290px;
     height: 299px;
   }
 
@@ -3893,14 +3925,26 @@ button,
     margin-bottom: 10px;
   }
 
+  .gym__inner-wrapper {
+    margin-left: 0;
+  }
+
   .coaches__swiper {
     width: 830px;
+  }
+
+  .features ul {
+    margin-left: 0;
   }
 
   .features ul {
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
+  }
+
+  .features__item-equipment {
+    height: auto;
   }
 
   .feedback__button--next {
@@ -3913,8 +3957,8 @@ button,
 }
 
 @media (min-width: 1200px) and (max-width: 1280px) {
-  .gym__inner-wrapper {
-    margin-left: 0;
+  .gym__description {
+    max-width: 320px;
   }
 
   .contacts__form {

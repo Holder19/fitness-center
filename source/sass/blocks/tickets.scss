@@ -155,8 +155,9 @@
   display: grid;
   justify-items: center;
   border: 7px solid;
-  border-color: transparent;
+  border-color: $color-default-white;
   transition: $trans-default;
+  position: relative;
 
   &:hover {
     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
@@ -219,7 +220,6 @@
 }
 
 .tickets__tabs-items span {
-  font-family: $ff-rouble;
   color: $color-default-font;
   display: inline-block;
 }
@@ -232,10 +232,12 @@
   line-height: 150%;
   color: $color-tabs-text-bg;
   opacity: 0.48;
-  transform: translate(-2px, 60px);
+  position: absolute;
+  top: 127px;
 
   @media (max-width: $mobile) {
     font-size: 80px;
+    top: 113px;
   }
 }
 

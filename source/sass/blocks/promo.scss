@@ -10,9 +10,11 @@
 .promo__description {
   padding: 83px 70px 83px 79px;
   background-color: $color-card-red;
+  max-width: 500px;
 
   @media (max-width: $tablet) {
     padding: 47px 31px 33px 44px;
+    max-width: none;
   }
 
   @media (max-width: $mobile) {
