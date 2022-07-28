@@ -17,6 +17,11 @@
 }
 
 .page__leveler {
+  @media (min-width: $vp-1440) {
+    margin: 0 auto;
+    width: 1366px;
+  }
+
   margin: 0 7.54%;
 
   @media (max-width: $tablet) {

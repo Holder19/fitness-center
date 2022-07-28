@@ -1,6 +1,6 @@
 .tickets {
   background-color: $color-gray-tickets-bg;
-  padding: 120px 0;
+  padding: 347px 0 120px;
   position: relative;
   z-index: 1;
 
@@ -232,7 +232,6 @@
   line-height: 150%;
   color: $color-tabs-text-bg;
   opacity: 0.48;
-  position: absolute;
   top: 127px;
 
   @media (max-width: $mobile) {

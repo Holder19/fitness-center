@@ -1394,9 +1394,14 @@ button,
 }
 
 .gym__inner-wrapper {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: 60px;
+  position: relative;
+  max-width: 1100px;
   justify-items: center;
 }
 
@@ -1462,13 +1467,14 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  z-index: 1;
   -ms-grid-row: 2;
   grid-row: 2/2;
-  -webkit-transform: translate(10px, -112px);
-  -ms-transform: translate(10px, -112px);
-  transform: translate(10px, -112px);
+  position: absolute;
+  top: 288px;
+  right: 358px;
   justify-items: center;
+  z-index: 2;
+  margin: 0 auto;
 }
 
 .gym__video-link {
@@ -1523,7 +1529,7 @@ button,
 
 .tickets {
   background-color: #f8f9fc;
-  padding: 120px 0;
+  padding: 347px 0 120px;
   position: relative;
   z-index: 1;
 }
@@ -1678,7 +1684,6 @@ button,
   line-height: 150%;
   color: #e8e8e8;
   opacity: 0.48;
-  position: absolute;
   top: 127px;
 }
 
@@ -2385,14 +2390,15 @@ button,
 }
 
 .contacts__layout-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts__form {
   background-color: #102654;
-  padding: 62px 12.45% 62px 7.54%;
+  padding: 62px 25% 62px 15%;
 }
 
 .contacts__form h2 {
@@ -2478,7 +2484,7 @@ button,
 }
 
 .contacts__info {
-  padding: 70px 11.64% 61px 9%;
+  padding: 70px 11% 61px 18%;
   border-top: 1px solid #74819c;
   width: 100%;
 }
@@ -2492,24 +2498,6 @@ button,
   letter-spacing: 0.03em;
   font-family: "Bebas Neue", "Ubuntu Mono", monospace;
   color: #102654;
-}
-
-.contacts__info-wrapper ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 200px 200px;
-  grid-template-columns: 200px 200px;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 15px;
-}
-
-.contacts__info-wrapper li {
-  margin: 0;
-  padding: 0;
 }
 
 .contacts__info-wrapper h4 {
@@ -2533,44 +2521,35 @@ button,
   color: #102654;
 }
 
-.contacts__info-wrapper li[data-tab="address"] {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
+.contacts__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 122px;
+  -moz-column-gap: 122px;
+  column-gap: 122px;
+}
+
+.contacts__address {
   position: relative;
 }
 
-.contacts__info-wrapper li[data-tab="address"]::before {
+.contacts__address::before {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 102px;
   background-color: #74819c;
-  right: -16%;
-  top: 6px;
+  width: 1px;
+  height: 100%;
+  right: -36.8%;
 }
 
-.contacts__info-wrapper li[data-tab="time"] {
-  -webkit-box-ordinal-group: 4;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-.contacts__info-wrapper li[data-tab="tel"] {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-  -ms-grid-column-align: end;
-  justify-self: end;
-  margin-right: 20px;
-}
-
-.contacts__info-wrapper li[data-tab="mail"] {
-  -webkit-box-ordinal-group: 5;
-  -ms-flex-order: 4;
-  order: 4;
-  -ms-grid-column-align: end;
-  justify-self: end;
+.contacts__address,
+.contacts__data {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 15px;
 }
 
 .footer {
@@ -2656,6 +2635,11 @@ button,
 } */
 
 @media (min-width: 1440px) {
+  .page__leveler {
+    margin: 0 auto;
+    width: 1366px;
+  }
+
   .coaches h2 {
     text-align: center;
   }
@@ -2782,6 +2766,8 @@ button,
 
   .gym__inner-wrapper {
     margin-left: 0;
+    display: -ms-grid;
+    display: grid;
   }
 
   .gym__description {
@@ -2829,6 +2815,7 @@ button,
   }
 
   .gym__video {
+    position: static;
     grid-column: auto;
     grid-row: auto;
     -webkit-transform: translate(0, -84px);
@@ -3151,6 +3138,11 @@ button,
   }
 
   .contacts__layout-wrapper {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3192,17 +3184,6 @@ button,
     margin-bottom: 32px;
   }
 
-  .contacts__info-wrapper ul {
-    -ms-grid-columns: -webkit-max-content -webkit-max-content;
-    -ms-grid-columns: max-content max-content;
-    grid-template-columns: -webkit-max-content -webkit-max-content;
-    grid-template-columns: max-content max-content;
-    -webkit-column-gap: 86px;
-    -moz-column-gap: 86px;
-    column-gap: 86px;
-    row-gap: 20px;
-  }
-
   .contacts__info-wrapper h4 {
     font-size: 20px;
     line-height: 150%;
@@ -3216,17 +3197,19 @@ button,
     line-height: 152.34%;
   }
 
-  .contacts__info-wrapper li[data-tab="address"]::before {
-    right: -23%;
-    height: 129px;
+  .contacts__info-wrapper {
+    -webkit-column-gap: 97px;
+    -moz-column-gap: 97px;
+    column-gap: 97px;
   }
 
-  .contacts__info-wrapper li[data-tab="tel"] {
-    margin-right: 25px;
+  .contacts__address::before {
+    right: -22.8%;
   }
 
-  .contacts__info-wrapper li[data-tab="mail"] {
-    margin-left: 10px;
+  .contacts__address,
+  .contacts__data {
+    row-gap: 20px;
   }
 
   .footer {
@@ -3814,41 +3797,24 @@ button,
     line-height: 32px;
   }
 
-  .contacts__info-wrapper ul {
-    -ms-grid-columns: none;
-    grid-template-columns: none;
-    -webkit-column-gap: 0;
-    -moz-column-gap: 0;
-    column-gap: 0;
-  }
-
   .contacts__info-wrapper h4 {
     margin-bottom: 6px;
   }
 
-  .contacts__info-wrapper li[data-tab="address"]::before {
+  .contacts__info-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contacts__address::before {
     display: none;
   }
 
-  .contacts__info-wrapper li[data-tab="time"] {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
-  .contacts__info-wrapper li[data-tab="tel"] {
-    -ms-grid-column-align: unset;
-    justify-self: unset;
-    margin: 0;
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-  }
-
-  .contacts__info-wrapper li[data-tab="mail"] {
-    -ms-grid-column-align: unset;
-    justify-self: unset;
-    margin: 0;
+  .contacts__address::before {
+    margin-bottom: 20px;
   }
 
   .footer {
@@ -3927,6 +3893,8 @@ button,
 
   .gym__inner-wrapper {
     margin-left: 0;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   .coaches__swiper {
@@ -3954,6 +3922,10 @@ button,
   .feedback__button--prev {
     left: 150px;
   }
+
+  .contacts__info {
+    padding: 70px 8% 61px 7%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1280px) {
@@ -3961,11 +3933,11 @@ button,
     max-width: 320px;
   }
 
-  .contacts__form {
-    padding: 62px 8% 62px 4%;
+  .gym__video {
+    right: 290px;
   }
 
-  .contacts__info {
-    padding: 70px 8% 61px 7%;
+  .contacts__form {
+    padding: 62px 8% 62px 4%;
   }
 }
