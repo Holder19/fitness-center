@@ -1,3 +1,10 @@
+.contacts__wrapper {
+  @media (min-width: $vp-1440) {
+    margin: 0 auto;
+    max-width: 2000px;
+  }
+}
+
 .contacts__layout-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -193,6 +200,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 122px;
+  position: relative;
 
   @media (max-width: $tablet) {
     column-gap: 97px;
@@ -207,25 +215,25 @@
 .contacts__address {
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: $color-form-border;
-    width: 1px;
-    height: 100%;
-    right: -36.8%;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: $color-form-border;
+  //   width: 1px;
+  //   height: 100%;
+  //   right: -36.8%;
 
-    @media (max-width: $tablet) {
-      right: -22.8%;
-    }
+  //   @media (max-width: $tablet) {
+  //     right: -22.8%;
+  //   }
 
-    @media (max-width: $mobile) {
-      display: none;
-    }
+  //   @media (max-width: $mobile) {
+  //     display: none;
+  //   }
+  // }
 
-    @media (max-width: $mobile) {
-      margin-bottom: 20px;
-    }
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
   }
 }
 
@@ -236,5 +244,41 @@
 
   @media (max-width: $tablet) {
     row-gap: 20px;
+  }
+}
+
+.contacts__line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: $color-form-border;
+  margin-left: 48%;
+
+  @media (min-width: $desktop) and (max-width: $vp-1365) {
+    margin-left: 42%;
+  }
+
+  @media (min-width: $vp-1440)  and (max-width: 1600px) {
+    margin-left: 42%;
+  }
+
+  @media (min-width: 1601px) and (max-width: $vp-1920) {
+    margin-left: 38%;
+  }
+
+  @media (min-width: 1921px) and (max-width: 2400px) {
+    margin-left: 34%;
+  }
+
+  @media (min-width: 2400px) {
+    margin-left: 30%;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 58.4%;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
   }
 }

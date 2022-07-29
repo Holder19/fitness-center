@@ -174,13 +174,13 @@
 }
 
 .promo__content img {
-  height: 500px;
+  height: 100%;
   width: 660px;
   object-fit: cover;
 
   @media (max-width: $tablet) {
     width: 386px;
-    height: 292px;
+    height: 100%;
   }
 
   @media (max-width: $mobile) {

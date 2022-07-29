@@ -28,6 +28,7 @@
 
   @media (max-width: $tablet) {
     flex-direction: column;
+    align-items: center;
   }
 
   @media (max-width: $mobile) {
@@ -60,11 +61,12 @@
   max-width: 300px;
 
   @media (max-width: $tablet) {
-    max-width: none;
+    max-width: 279px;
   }
 
   @media (max-width: $mobile) {
     min-height: 299px;
+    max-width: none;
     width: 290px;
   }
 }
@@ -125,12 +127,11 @@
 
 .stocks__card-content img {
   width: 280px;
-  height: 462px;
+  height: 100%;
   object-fit: cover;
 
   @media (max-width: $tablet) {
     width: 399px;
-    height: 462px;
   }
 
   @media (max-width: $mobile) {
@@ -172,7 +173,12 @@
   padding: 25px 35px 29px 28px;
   min-height: 211px;
 
+  @media (max-width: $tablet) {
+    min-width: 324px;
+  }
+
   @media (max-width: $mobile) {
+    min-width: auto;
     align-items: center;
     padding: 36px 28px 29px 28px;
   }
@@ -206,6 +212,14 @@
         max-width: auto;
       }
     }
+  }
+}
+
+.stocks__advantageous br {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
   }
 }
 

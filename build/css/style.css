@@ -1824,7 +1824,7 @@ button,
 }
 
 .promo__content img {
-  height: 500px;
+  height: 100%;
   width: 660px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -2229,7 +2229,7 @@ button,
 
 .stocks__card-content img {
   width: 280px;
-  height: 462px;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -2282,6 +2282,10 @@ button,
   color: #1c3374;
   margin: 0;
   padding: 0;
+}
+
+.stocks__advantageous br {
+  display: none;
 }
 
 .stocks__advantageous a {
@@ -2530,19 +2534,11 @@ button,
   -webkit-column-gap: 122px;
   -moz-column-gap: 122px;
   column-gap: 122px;
+  position: relative;
 }
 
 .contacts__address {
   position: relative;
-}
-
-.contacts__address::before {
-  content: "";
-  position: absolute;
-  background-color: #74819c;
-  width: 1px;
-  height: 100%;
-  right: -36.8%;
 }
 
 .contacts__address,
@@ -2550,6 +2546,14 @@ button,
   display: -ms-grid;
   display: grid;
   row-gap: 15px;
+}
+
+.contacts__line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #74819c;
+  margin-left: 48%;
 }
 
 .footer {
@@ -2642,6 +2646,17 @@ button,
 
   .coaches h2 {
     text-align: center;
+  }
+
+  .contacts__wrapper {
+    margin: 0 auto;
+    max-width: 2000px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .contacts__line {
+    margin-left: 30%;
   }
 }
 
@@ -2948,7 +2963,7 @@ button,
 
   .promo__content img {
     width: 386px;
-    height: 292px;
+    height: 100%;
   }
 
   .coaches h2 {
@@ -3081,6 +3096,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .stocks__card {
@@ -3092,12 +3110,11 @@ button,
   }
 
   .stocks__card-description {
-    max-width: none;
+    max-width: 279px;
   }
 
   .stocks__card-content img {
     width: 399px;
-    height: 462px;
   }
 
   .stocks__advantageous ul {
@@ -3107,8 +3124,16 @@ button,
     max-width: none;
   }
 
+  .stocks__advantageous li {
+    min-width: 324px;
+  }
+
   .stocks__advantageous h4:first-child {
     max-width: 153px;
+  }
+
+  .stocks__advantageous br {
+    display: block;
   }
 
   .feedback h2 {
@@ -3203,13 +3228,13 @@ button,
     column-gap: 97px;
   }
 
-  .contacts__address::before {
-    right: -22.8%;
-  }
-
   .contacts__address,
   .contacts__data {
     row-gap: 20px;
+  }
+
+  .contacts__line {
+    margin-left: 58.4%;
   }
 
   .footer {
@@ -3657,6 +3682,7 @@ button,
 
   .stocks__card-description {
     min-height: 299px;
+    max-width: none;
     width: 290px;
   }
 
@@ -3691,6 +3717,7 @@ button,
   }
 
   .stocks__advantageous li {
+    min-width: auto;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -3809,12 +3836,12 @@ button,
     gap: 0;
   }
 
-  .contacts__address::before {
-    display: none;
+  .contacts__address {
+    margin-bottom: 20px;
   }
 
-  .contacts__address::before {
-    margin-bottom: 20px;
+  .contacts__line {
+    display: none;
   }
 
   .footer {
@@ -3926,6 +3953,10 @@ button,
   .contacts__info {
     padding: 70px 8% 61px 7%;
   }
+
+  .contacts__line {
+    margin-left: 42%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1280px) {
@@ -3939,5 +3970,23 @@ button,
 
   .contacts__form {
     padding: 62px 8% 62px 4%;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .contacts__line {
+    margin-left: 42%;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+  .contacts__line {
+    margin-left: 38%;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 2400px) {
+  .contacts__line {
+    margin-left: 34%;
   }
 }
